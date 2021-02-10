@@ -9,3 +9,5 @@
     f(c,b,a)_{\textup{NOR}} =&\\
 \end{align*}
 ```
+
+https://www.edaplayground.com/x/QeJB

@@ -26,6 +26,6 @@ Link: https://github.com/Simon-Roubal/Digital-electronics-1
     f(c,b,a)_{\textup{NOR}} =&\\
 \end{align*}
 ```
-## Part Three: Verification of Distributive laws
+## Part Four: Verification of Distributive laws
 
 https://www.edaplayground.com/x/QeJB

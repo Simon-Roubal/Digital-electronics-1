@@ -4,20 +4,20 @@
 
 Link: https://github.com/Simon-Roubal/Digital-electronics-1/tree/main/Labs/01-gates
 
-## Part Two: function f(c,b,a) table
+## Part Two: Verification of De Morgan's laws
+
+Part Two: function f(c,b,a) table:
 
 | **c** | **b** |**a** | **f(c,b,a)** |
 | :-: | :-: | :-: | :-: |
-| 0 | 0 | 0 |  |
-| 0 | 0 | 1 |  |
-| 0 | 1 | 0 |  |
-| 0 | 1 | 1 |  |
-| 1 | 0 | 0 |  |
-| 1 | 0 | 1 |  |
-| 1 | 1 | 0 |  |
-| 1 | 1 | 1 |  |
-
-## Part Three: Verification of De Morgan's laws
+| 0 | 0 | 0 | 1 |
+| 0 | 0 | 1 | 1 |
+| 0 | 1 | 0 | 0 |
+| 0 | 1 | 1 | 0 |
+| 1 | 0 | 0 | 0 |
+| 1 | 0 | 1 | 1 |
+| 1 | 1 | 0 | 0 |
+| 1 | 1 | 1 | 0 |
 
 Link to EDA: https://www.edaplayground.com/x/QeJB
 
@@ -33,7 +33,7 @@ end architecture dataflow;
 Screen:
 ![alt text](https://github.com/Simon-Roubal/Digital-electronics-1/blob/main/Labs/01-gates/pictures/de%20morghans.png?raw=true)
 
-## Part Four: Verification of Distributive laws
+## Part Three: Verification of Distributive laws
 
 
 Link to EDA: https://www.edaplayground.com/x/J7ZZ

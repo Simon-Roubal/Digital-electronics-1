@@ -6,7 +6,7 @@ Link: https://github.com/Simon-Roubal/Digital-electronics-1/tree/main/Labs/01-ga
 
 ## Part Two: Verification of De Morgan's laws
 
-Part Two: function f(c,b,a) table:
+Function f(c,b,a) table:
 
 | **c** | **b** |**a** | **f(c,b,a)** |
 | :-: | :-: | :-: | :-: |

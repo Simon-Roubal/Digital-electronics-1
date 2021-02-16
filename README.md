@@ -31,7 +31,7 @@ begin
 end architecture dataflow;
 ```
 Screen:
-![alt text](https://github.com/Simon-Roubal/Digital-electronics-1/blob/main/pictures/Sn%C3%ADmek%20obrazovky%202021-02-10%20141445.png?raw=true)
+![alt text](https://github.com/Simon-Roubal/Digital-electronics-1/blob/main/Labs/01-gates/pictures/de%20morghans.png?raw=true)
 
 ## Part Four: Verification of Distributive laws
 

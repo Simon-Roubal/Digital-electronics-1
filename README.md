@@ -53,4 +53,4 @@ begin
 end architecture dataflow;
 ```
 Screen:
-![alt text](https://github.com/Simon-Roubal/Digital-electronics-1/blob/main/Labs/01-gates/pictures/de%20morghans.png?raw=true)
+![alt text](https://github.com/Simon-Roubal/Digital-electronics-1/blob/main/Labs/01-gates/pictures/distributive.png?raw=true)

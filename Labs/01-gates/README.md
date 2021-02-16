@@ -2,7 +2,7 @@
 
 ## Part One: Link to the repository
 
-Link: https://github.com/Simon-Roubal/Digital-electronics-1
+Link: https://github.com/Simon-Roubal/Digital-electronics-1/tree/main/Labs/01-gates
 
 ## Part Two: function f(c,b,a) table
 

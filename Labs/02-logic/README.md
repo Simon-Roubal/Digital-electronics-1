@@ -23,7 +23,7 @@ https://github.com/Simon-Roubal/Digital-electronics-1/tree/main/Labs/02-logic
 | 14 | 1 1 | 1 0 | 1 | 0 | 0 |
 | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
 
-# Part three: Karnaugh maps and simplified SoP form of the "greater than" function and a PoS form of the "less than" function
+# Part Three: Karnaugh maps and simplified SoP form of the "greater than" function and a PoS form of the "less than" function
 
 ## Karnaugh maps
 
@@ -43,7 +43,7 @@ B is less than A:
 
 ![alt text](https://github.com/Simon-Roubal/Digital-electronics-1/blob/main/Labs/02-logic/pictures/Equations.png?raw=true)
 
-# Part Tree: A 4-bit binary comparator
+# Part Four: A 4-bit binary comparator
 
 ## Link to EDA
 

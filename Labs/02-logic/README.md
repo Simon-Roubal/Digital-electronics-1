@@ -40,7 +40,7 @@ B is less than A:
 ![alt text](https://github.com/Simon-Roubal/Digital-electronics-1/blob/main/Labs/02-logic/pictures/b%20smaller%20than%20a.png?raw=true)
 
 ## SoP and PoS
-
+```LaTeX
 \begin{align*}
     SoP(B>A) =&~ (B_{1}\overline{A_{1}}\) + (B_{1}B_{0}\overline{A_{0}}\)+(B_{0}\ \overline{A_{1}}+\ \overline{A_{0}}\)
 \end{align*}
@@ -48,7 +48,7 @@ B is less than A:
 \begin{align*}
     SoP(B<A) =&~ (\overline{B_{1}}\ + A_{1}) * (\overline{B_{0}}\ + A_{1}) *(A_{0}+ A_{1})*(\overline{B_{0}}\ + \overline{B_{1}}\) * (\overline{B_{1}}\ + A_{0})
 \end{align*}
-
+```
 
 https://www.edaplayground.com/x/8Qrz
 

@@ -130,3 +130,5 @@ begin
 end architecture testbench;
 ```
 ## Screenshot with simulated time waveforms
+
+![alt text](https://github.com/Simon-Roubal/Digital-electronics-1/blob/main/Labs/02-logic/pictures/B%20bigger%20than%20A.png?raw=true)

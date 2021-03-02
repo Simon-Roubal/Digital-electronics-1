@@ -132,3 +132,10 @@ end architecture testbench;
 ## Screenshot with simulated time waveforms
 
 ![alt text](https://github.com/Simon-Roubal/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/out.png?raw=true)
+
+<object data="https://github.com/Simon-Roubal/Digital-electronics-1/blob/main/Labs/03-vivado/Guide.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="https://github.com/Simon-Roubal/Digital-electronics-1/blob/main/Labs/03-vivado/Guide.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/Simon-Roubal/Digital-electronics-1/blob/main/Labs/03-vivado/Guide.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+

@@ -133,11 +133,15 @@ end architecture testbench;
 
 ![alt text](https://github.com/Simon-Roubal/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/out.png?raw=true)
 
-![alt text](https://github.com/Simon-Roubal/Digital-electronics-1/blob/main/Labs/03-vivado/Guide.pdf?raw=true)
+### Guide to Vivado
 
-<object data="https://github.com/Simon-Roubal/Digital-electronics-1/blob/main/Labs/03-vivado/Guide.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://github.com/Simon-Roubal/Digital-electronics-1/blob/main/Labs/03-vivado/Guide.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/Simon-Roubal/Digital-electronics-1/blob/main/Labs/03-vivado/Guide.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+## Založení projektu ve Vivadu
+
+# Klineme na záložku File/Project/New…
+
+![obrazek](https://user-images.githubusercontent.com/77580298/109648182-9b6fca80-7b5a-11eb-97c9-c0742ffc940b.png)
+
+# Otevře se nám okno s vytvořením nového projektu, klikneme na Next
+
+![obrazek](https://user-images.githubusercontent.com/77580298/109648220-a9bde680-7b5a-11eb-8e96-6faabe0ae2d4.png)
 

@@ -32,4 +32,148 @@ All 7-seg displays used are with common anode
 | T14 | AN5 | CF | T11 |
 | K2 | AN6 | CG | L18 |
 | U13 | AN7 | DP | H15
-# Part Three
+# Part Three: Seven-segment display decoder
+## Listing of VHDL architecture from source file
+```vhdl
+architecture Behavioral of hex_7seg is
+begin
+    --------------------------------------------------------------------
+    -- p_7seg_decoder:
+    -- A combinational process for 7-segment display decoder. 
+    -- Any time "hex_i" is changed, the process is "executed".
+    -- Output pin seg_o(6) corresponds to segment A, seg_o(5) to B, etc.
+    --------------------------------------------------------------------
+    p_7seg_decoder : process(hex_i)
+    begin
+        case hex_i is
+            when "0000" =>
+                seg_o <= "0000001";     -- 0
+            when "0001" =>
+                seg_o <= "1001111";     -- 1
+            when "0010" =>
+                seg_o <= "0010010";     -- 2
+            when "0011" =>
+                seg_o <= "0000110";     -- 3
+            when "0100" =>
+                seg_o <= "1001100";     -- 4
+            when "0101" =>
+                seg_o <= "0100100";     -- 5
+            when "0110" =>
+                seg_o <= "0100000";     -- 6
+            when "0111" =>
+                seg_o <= "0001111";     -- 7
+            when "1000" =>
+                seg_o <= "0000000";     -- 8
+            when "1001" =>
+                seg_o <= "0000100";     -- 9
+            when "1010" =>
+                seg_o <= "0001000";     -- A
+            when "1011" =>
+                seg_o <= "1100000";     -- B
+            when "1100" =>
+                seg_o <= "0110001";     -- C
+            when "1101" =>
+                seg_o <= "1000010";     -- D
+            when "1110" =>
+                seg_o <= "0110000";     -- E
+            when others =>
+                seg_o <= "0111000";     -- F
+        end case;
+    end process p_7seg_decoder;
+end Behavioral;
+```
+## Listing of VHDL stimulus process from testbench file
+
+```vhdl
+p_stimulus : process
+    begin
+        -- Report a note at the begining of stimulus process
+        report "Stimulus process started" severity note;
+
+        s_hex <= "0000"; wait for 10 ns;
+        
+        s_hex <= "0001"; wait for 10 ns;
+        
+        s_hex <= "0010"; wait for 10 ns;
+        
+        s_hex <= "0011"; wait for 10 ns;
+        
+        s_hex <= "0100"; wait for 10 ns;
+        
+        s_hex <= "0101"; wait for 10 ns;
+        
+        s_hex <= "0110"; wait for 10 ns;
+        
+        s_hex <= "0111"; wait for 10 ns;
+        
+        s_hex <= "1000"; wait for 10 ns;
+        
+        s_hex <= "1001"; wait for 10 ns;
+        
+        s_hex <= "1010"; wait for 10 ns;
+        
+        s_hex <= "1011"; wait for 10 ns;
+        
+        s_hex <= "1100"; wait for 10 ns;
+        
+        s_hex <= "1101"; wait for 10 ns;
+        
+        s_hex <= "1110"; wait for 10 ns;
+        
+        s_hex <= "1111"; wait for 10 ns;
+        
+        -- Report a note at the end of stimulus process
+        report "Stimulus process finished" severity note;
+        wait;
+    end process p_stimulus;
+```
+## Screenshot with simulated time waveforms
+![obrazek](https://user-images.githubusercontent.com/77580298/110113420-5db9ae80-7db3-11eb-9549-d676803f9fdc.png)
+## Listing of VHDL code from source file
+```vhdl
+entity top is
+    Port ( 
+    SW : in STD_LOGIC_VECTOR (4-1 downto 0);
+    CA : out STD_LOGIC;
+    CB : out STD_LOGIC;
+    CC : out STD_LOGIC;
+    CD : out STD_LOGIC;
+    CE : out STD_LOGIC;
+    CF : out STD_LOGIC;
+    CG : out STD_LOGIC; 
+    
+    LED : out STD_LOGIC_VECTOR (8-1 downto 0);
+    AN : out STD_LOGIC_VECTOR (8-1 downto 0)
+    );
+end top;
+
+architecture Behavioral of top is
+begin
+hex2seg : entity work.hex_7seg
+        port map(
+            hex_i    => SW,
+            seg_o(6) => CA,
+            seg_o(5) => CB,
+            seg_o(4) => CC,
+            seg_o(3) => CD,
+            seg_o(2) => CE,
+            seg_o(1) => CF,                                  
+            seg_o(0) => CG
+        );
+
+    -- Connect one common anode to 3.3V
+    AN <= b"1111_0111";
+
+    -- Display input value
+    LED(3 downto 0) <= SW;
+    
+end Behavioral;
+```
+#Part Four: LED(7:4) indicators
+## Truth table code for LEDs(7:4)
+
+## VHDL code for LEDs(7:4)
+```vhdl
+
+```
+## Screenshot with simulated time waveforms

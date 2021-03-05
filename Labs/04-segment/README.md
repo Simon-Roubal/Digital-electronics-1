@@ -169,7 +169,7 @@ hex2seg : entity work.hex_7seg
     
 end Behavioral;
 ```
-#Part Four: LED(7:4) indicators
+# Part Four: LED(7:4) indicators
 ## Truth table code for LEDs(7:4)
 
 ## VHDL code for LEDs(7:4)

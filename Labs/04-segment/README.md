@@ -196,10 +196,20 @@ end Behavioral;
     
     -- Turn LED(5) on if input value is greater than 9
     LED(5) <= '1' when (SW > "1010");
-    
+ 
     -- Turn LED(6) on if input value is odd, ie 1, 3, 5, ...
-    
+    LED(6) <= '1' when (SW > "0001")else
+              '1' when (SW > "0011")else
+              '1' when (SW > "0101")else
+              '1' when (SW > "0111")else
+              '1' when (SW > "1001")else
+              '1' when (SW > "1011")else
+              '1' when (SW > "1101")else
+              '1' when (SW > "1111");  
     -- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8
-    
+    LED(7) <= '1' when (SW > "0001")else
+              '1' when (SW > "0010")else
+              '1' when (SW > "0100")else
+              '1' when (SW > "1000");
 ```
 ## Screenshot with simulated time waveforms

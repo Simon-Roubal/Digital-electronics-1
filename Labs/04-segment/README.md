@@ -1,3 +1,5 @@
+# Part One: Link to the reposiory
+https://github.com/Simon-Roubal/Digital-electronics-1/tree/main/Labs/03-vivado
 | **Hex** | **Inputs** | **A** | **B** | **C** | **D** | **E** | **F** | **G** |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0000 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |

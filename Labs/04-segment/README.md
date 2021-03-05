@@ -191,7 +191,7 @@ end Behavioral;
 | F | 1111 | 0 | 1 | 1 | 0 |
 ## VHDL code for LEDs(7:4)
 ```vhdl
- -- Turn LED(4) on if input value is equal to 0, ie "0000"
+    -- Turn LED(4) on if input value is equal to 0, ie "0000"
     LED(4) <= '1' when (SW = "0000");
     
     -- Turn LED(5) on if input value is greater than 9

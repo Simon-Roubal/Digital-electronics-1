@@ -213,5 +213,5 @@ end Behavioral;
               '1' when (SW > "1000");
 ```
 ## Screenshot with simulated time waveforms
-I wasn't unfortunatly able to get the simulation running and after many attempts to do so, my codes got somehow overwritten. :/
+I wasn't unfortunatly able to get the simulation running and after many attempts to do so, my codes got somehow overwritten and I have lost them. :/
 ![obrazek](https://user-images.githubusercontent.com/77580298/110530194-70691600-811a-11eb-8ec1-efecc30dff6b.png)

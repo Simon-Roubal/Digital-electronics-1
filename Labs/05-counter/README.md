@@ -75,9 +75,9 @@ https://github.com/Simon-Roubal/Digital-electronics-1/tree/main/Labs/05-counter
     end process p_stimulus;
 ```
 ## Screenshot with simulated time waveforms
-Start of counting with overflow at end
+Start of counting with overflow at the end
 ![obrazek](https://user-images.githubusercontent.com/77580298/111304189-bd3a7880-8655-11eb-89e6-9564fd4dd1ec.png)
-Change of counting direction and overflow at end
+Change of counting direction and overflow at the end
 ![obrazek](https://user-images.githubusercontent.com/77580298/111304933-a47e9280-8656-11eb-9ec9-57cc5911ffaa.png)
 
 # Part four: Top level

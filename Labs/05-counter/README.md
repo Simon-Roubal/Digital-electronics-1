@@ -21,13 +21,64 @@ https://github.com/Simon-Roubal/Digital-electronics-1/tree/main/Labs/05-counter
 # Part three: Bidirectional counter
 ## VHDL code of the process `p_cnt_up_down`
 ```vhdl
+    p_cnt_up_down : process(clk)
+    begin
+        if rising_edge(clk) then
+        
+            if (reset = '1') then               -- Synchronous reset
+                s_cnt_local <= (others => '0'); -- Clear all bits
 
+            elsif (en_i = '1') then       -- Test if counter is enable
+
+                if (cnt_up_i = '1')then
+                    s_cnt_local <= s_cnt_local + 1;
+                else
+                    s_cnt_local <= s_cnt_local - 1;
+                end if;
+            end if;
+        end if;
+    end process p_cnt_up_down;
 ```
 ## VHDL reset and stimulus processes from testbench file `tb_cnt_up_down.vhd`
 ```vhdl
+    p_reset_gen : process
+    begin
+        s_reset <= '0';
+        wait for 12 ns;
+        
+        -- Reset activated
+        s_reset <= '1';
+        wait for 73 ns;
 
+        s_reset <= '0';
+        wait;
+    end process p_reset_gen;
+
+    p_stimulus : process
+    begin
+        report "Stimulus process started" severity note;
+
+        -- Enable counting
+        s_en     <= '1';
+        
+        -- Change counter direction
+        s_cnt_up <= '1';
+        wait for 380 ns;
+        s_cnt_up <= '0';
+        wait for 220 ns;
+
+        -- Disable counting
+        s_en     <= '0';
+
+        report "Stimulus process finished" severity note;
+        wait;
+    end process p_stimulus;
 ```
 ## Screenshot with simulated time waveforms
+Start of counting with overflow at end
+![obrazek](https://user-images.githubusercontent.com/77580298/111304189-bd3a7880-8655-11eb-89e6-9564fd4dd1ec.png)
+Change of counting direction and overflow at end
+![obrazek](https://user-images.githubusercontent.com/77580298/111304933-a47e9280-8656-11eb-9ec9-57cc5911ffaa.png)
 
 # Part four: Top level
 ## VHDL code from source `file top.vhd`

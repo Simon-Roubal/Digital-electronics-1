@@ -161,3 +161,4 @@ begin
 end architecture Behavioral;
 ```
 ## Image of the top layer including both counters
+![Skener_20210316](https://user-images.githubusercontent.com/77580298/111385675-6fe8f600-86ab-11eb-8e57-9cffebbbc584.png)

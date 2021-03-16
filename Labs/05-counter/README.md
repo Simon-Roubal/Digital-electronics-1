@@ -10,6 +10,7 @@ https://github.com/Simon-Roubal/Digital-electronics-1/tree/main/Labs/05-counter
    | BTND | P18 |
    | BTNC | N17 |
 ## Table with calculated values
+   | **Time interval** | **Number of clk periods** | **Number of clk periods in hex** | **Number of clk periods in binary** |
    | :-: | :-: | :-: | :-: |
    | 2&nbsp;ms | 200 000 | `x"3_0d40"` | `b"0011_0000_1101_0100_0000"` |
    | 4&nbsp;ms | 400 000 | `x"6_1A80"` | `b"0110_0001_1010_1000_0000"` |

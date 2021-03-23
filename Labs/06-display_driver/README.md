@@ -218,4 +218,5 @@ begin
 end architecture Behavioral;
 ```
 # Part four: Eight-digit driver
-## Image of the driver schematic
+![obrazek](https://user-images.githubusercontent.com/77580298/112192876-a5d82e00-8c07-11eb-9155-08c19b38009d.png)
+

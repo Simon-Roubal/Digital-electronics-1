@@ -2,6 +2,13 @@
 https://github.com/Simon-Roubal/Digital-electronics-1/edit/main/Labs/07-ffs
 # Part two: Characteristic equations and completed tables for D, JK, T flip-flops
 
+<!--
+\begin{align*}
+    q_{n+1}^D =&~ \\
+    q_{n+1}^{JK} =&\\
+    q_{n+1}^T =&\\
+\end{align*}-->
+
 | **clk** | **d** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
    | ![rising](Images/eq_uparrow.png) | 0 | 0 |  |  |

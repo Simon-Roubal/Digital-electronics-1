@@ -159,7 +159,7 @@ end process p_d_latch;
         end if;
     end process p_d_ff;
 ```
-```p_d_ff_rst``
+```p_d_ff_rst```
 ```vhdl
 
 ```
@@ -176,7 +176,7 @@ end process p_d_latch;
 ```vhdl 
 
 ```
-```tb_p_d_ff_rst``
+```tb_p_d_ff_rst```
 ```vhdl
 
 ```

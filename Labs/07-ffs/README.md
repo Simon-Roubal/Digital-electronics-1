@@ -146,10 +146,45 @@ end process p_d_latch;
 
 # Flip-flops
 ## VHDL code listing of the processes ```p_d_ff_arst```, ```p_d_ff_rst```, ```p_jk_ff_rst```, ```p_t_ff_rst```
+```p_d_ff_arst```
 ```vhdl 
+    p_d_ff : process(clk, arst)
+    begin
+        if (arst = '1') then
+            q     <= '0';
+            q_bar <= '1';
+        elsif rising_edge(clk) then 
+            q     <= d;
+            q_bar <= not d;
+        end if;
+    end process p_d_ff;
+```
+```p_d_ff_rst``
+```vhdl
+
+```
+```p_jk_ff_rst```
+```vhdl
+
+```
+```p_t_ff_rst```
+```vhdl
 
 ```
 ## Listing of VHDL clock, reset and stimulus processes from the testbench files
+```tb_p_d_ff_arst```
+```vhdl 
+
+```
+```tb_p_d_ff_rst``
+```vhdl
+
+```
+```tb_p_jk_ff_rst```
+```vhdl
+
+```
+```tb_p_t_ff_rst```
 ```vhdl
 
 ```

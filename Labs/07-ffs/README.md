@@ -192,4 +192,4 @@ end process p_d_latch;
 
 # Shift register
 ## Image of the shift register schematic
-
+![obrazek](https://user-images.githubusercontent.com/77580298/113050754-7dbb7280-91a5-11eb-9a53-46536923afd3.png)

@@ -22,6 +22,8 @@ https://github.com/Simon-Roubal/Digital-electronics-1/tree/main/Labs/08-traffic_
 
 ## State diagram
 
+![obrazek](https://user-images.githubusercontent.com/77580298/113709637-06c13500-96e3-11eb-9022-985b93780a02.png)
+
 ## Listing of VHDL code of sequential process `p_traffic_fsm`
 ```vhdl
     p_traffic_fsm : process(clk)

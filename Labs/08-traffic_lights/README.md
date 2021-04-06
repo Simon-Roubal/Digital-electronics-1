@@ -211,7 +211,7 @@ https://github.com/Simon-Roubal/Digital-electronics-1/tree/main/Labs/08-traffic_
                             s_cnt   <= c_ZERO;
                         end if;
                     when others =>
-                        s_state <= STOP1;
+                        s_state <= goS;
 
                 end case;
             end if; -- Synchronous reset

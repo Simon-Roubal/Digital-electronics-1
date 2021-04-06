@@ -143,11 +143,15 @@ https://github.com/Simon-Roubal/Digital-electronics-1/tree/main/Labs/08-traffic_
 ![obrazek](https://user-images.githubusercontent.com/77580298/113712116-037b7880-96e6-11eb-97b8-0a84a82651ad.png)
 ![obrazek](https://user-images.githubusercontent.com/77580298/113712175-17bf7580-96e6-11eb-81b6-5d6a895f63db.png)
 # Smart controller
-
 ## State table
-
+| **Current state** | **Direction South** | **Direction West** | **No cars** | **Cars West** | **Cars South** | **Cars both directions** |
+| :-- | :-: | :-: | :-: | :-: | :-: | :-: |
+| `goS`   | green  | red    | `goS` | `waitS` | `goS` | `waitS` |
+| `waitS` | yellow | red    | `goW` | `goW` | `goW` | `goW` |
+| `goW`   | red    | green  | `goW` | `goW` | `waitW` | `waitW` |
+| `waitW` | red    | yellow | `goS` | `goS` | `goS` | `goS` |
 ## State diagram
-
+![obrazek](https://user-images.githubusercontent.com/77580298/113737366-42b5c380-96fe-11eb-801f-bf74b2d558e2.png)
 ## Listing of VHDL code of sequential process `p_smart_traffic_fsm`
 ```vhdl
 

@@ -140,7 +140,8 @@ https://github.com/Simon-Roubal/Digital-electronics-1/tree/main/Labs/08-traffic_
     end process p_output_fsm;
 ```
 ## Screenshot(s) of the simulation
-
+![obrazek](https://user-images.githubusercontent.com/77580298/113712116-037b7880-96e6-11eb-97b8-0a84a82651ad.png)
+![obrazek](https://user-images.githubusercontent.com/77580298/113712175-17bf7580-96e6-11eb-81b6-5d6a895f63db.png)
 # Smart controller
 
 ## State table
